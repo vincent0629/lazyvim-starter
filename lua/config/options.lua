@@ -6,3 +6,8 @@ opt.tabstop = 8
 opt.relativenumber = false
 
 vim.g.autoformat = false
+
+local cmd = vim.cmd
+cmd.aunmenu([[PopUp.How-to\ disable\ mouse]])
+cmd.amenu([[PopUp.Open\ URL <Cmd>call jobstart(["open", expand("<cfile>")])<CR>]])
+cmd.amenu([[PopUp.Open\ file\ under\ cursor <Cmd>e <cfile><CR>]])
