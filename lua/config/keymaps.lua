@@ -26,3 +26,6 @@ keymap.set("n", "<leader>wv", "<cmd>split<cr>", { desc = "Split window below" })
 keymap.set("n", "<leader>wc", "<cmd>close<cr>", { desc = "Close window" })
 
 keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
+
+keymap.set("n", "<leader>gx", "<cmd>call jobstart([\"open\", expand(\"<cfile>\")])<cr>", { desc = "Open URL" })
+keymap.set("n", "<leader>gf", "<cmd>e <cfile><cr>", { desc = "Open file under cursor" })
