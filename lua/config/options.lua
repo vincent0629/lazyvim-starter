@@ -4,7 +4,6 @@
 local opt = vim.opt
 opt.mouse = ""
 opt.tabstop = 8
-opt.relativenumber = false
 
 vim.g.autoformat = false
 
