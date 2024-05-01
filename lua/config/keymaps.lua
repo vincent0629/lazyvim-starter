@@ -27,6 +27,7 @@ keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "Save file" })
 keymap.set("n", "<leader>fc", mini.delete, { desc = "Close file" })
 keymap.set("n", "<leader>fe", "<cmd>Neotree filesystem reveal left<cr>", { desc = "File explorer" })
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
+keymap.set("n", "<leader>fl", ReloadWithEncoding, { desc = "Reload with encoding" })
 
 keymap.set("n", "<leader>wh", "<cmd>vsplit<cr>", { desc = "Split window right" })
 keymap.set("n", "<leader>wv", "<cmd>split<cr>", { desc = "Split window below" })
@@ -36,5 +37,3 @@ keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
 keymap.set("n", "<leader>gx", "<cmd>call jobstart([\"open\", expand(\"<cfile>\")])<cr>", { desc = "Open URL" })
 keymap.set("n", "<leader>gf", "<cmd>e <cfile><cr>", { desc = "Open file under cursor" })
-
-keymap.set("n", "<leader>ce", ReloadWithEncoding, { desc = "Reload with encoding" })
