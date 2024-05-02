@@ -23,9 +23,10 @@ end
 keymap.set("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New file" })
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find file" })
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Grep file" })
+keymap.set("n", "<leader>fh", "<cmd>Telescope resume<cr>", { desc = "Resume find/grep" })
 keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "Save file" })
 keymap.set("n", "<leader>fc", mini.delete, { desc = "Close file" })
-keymap.set("n", "<leader>fe", "<cmd>Neotree filesystem reveal left<cr>", { desc = "File explorer" })
+keymap.set("n", "<leader>fx", "<cmd>Neotree filesystem reveal left<cr>", { desc = "File explorer" })
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
 keymap.set("n", "<leader>fl", ReloadWithEncoding, { desc = "Reload with encoding" })
 
@@ -37,3 +38,5 @@ keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
 keymap.set("n", "<leader>gx", "<cmd>call jobstart([\"open\", expand(\"<cfile>\")])<cr>", { desc = "Open URL" })
 keymap.set("n", "<leader>gf", "<cmd>e <cfile><cr>", { desc = "Open file under cursor" })
+
+keymap.set("n", "<leader>cs", "<cmd>sort<cr>", { desc = "Sort lines" })
