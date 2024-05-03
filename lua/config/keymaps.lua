@@ -5,11 +5,11 @@ local keymap = vim.keymap
 local mini = require("mini.bufremove")
 
 local disable = {"ft", "fT", "wd", "w-", "w|", "ww", "-", "`", "|", "bb", "K", "L", "ur", "uf", "uF", "us", "uw", "ul", "uL", "ud", "uc", "uh", "uT", "ub", "ui", "xl", "xq", "l", "cd", "gg", "gG", "gf", "gb"}
-for i = 1, table.getn(disable) do
+for i = 1, #disable do
   keymap.set("n", "<leader>" .. disable[i], "")
 end
 disable = {"l", "f", "<tab>", "]", "d", "["}
-for i = 1, table.getn(disable) do
+for i = 1, #disable do
   keymap.set("n", "<leader><tab>" .. disable[i], "")
 end
 
