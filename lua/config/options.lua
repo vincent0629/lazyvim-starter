@@ -10,8 +10,8 @@ opt.listchars = {
   tab = "» ",
   eol = "↲",
 }
-opt.eol = false
-opt.fixeol = false
+--opt.eol = false
+--opt.fixeol = false
 
 vim.g.autoformat = false
 
