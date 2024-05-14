@@ -5,7 +5,7 @@ return {
   },
   {
     "lewis6991/gitsigns.nvim",
-    enabled = false,    
+    enabled = false,
   },
   {
     "echasnovski/mini.pairs",
@@ -13,6 +13,6 @@ return {
   },
   {
     "nvim-pack/nvim-spectre",
-    enabled = false,    
+    enabled = false,
   },
 }
