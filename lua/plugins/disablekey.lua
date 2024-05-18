@@ -18,12 +18,6 @@ return {
     end,
   },
   {
-    "mini.bufremove",
-    keys = function()
-      return {}
-    end,
-  },
-  {
     "todo-comments.nvim",
     keys = function()
       return {}
@@ -43,12 +37,6 @@ return {
   },
   {
     "nvim-notify",
-    keys = function()
-      return {}
-    end,
-  },
-  {
-    "nvim-treesitter-context",
     keys = function()
       return {}
     end,

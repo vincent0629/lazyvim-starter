@@ -2,9 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local keymap = vim.keymap
-local mini = require("mini.bufremove")
 
-local disable = {"ft", "fT", "wd", "w-", "w|", "ww", "-", "`", "|", "bb", "K", "L", "ur", "uf", "uF", "us", "uw", "ul", "uL", "ud", "uc", "uh", "uT", "ub", "ui", "xl", "xq", "l", "cd", "gg", "gG", "gf", "gb"}
+local disable = {"ft", "fT", "wd", "w-", "w|", "ww", "-", "`", "|", "bb", "K", "L", "ur", "uf", "uF", "us", "uw", "ul", "uL", "ud", "uc", "uh", "uT", "ub", "ui", "xl", "xq", "l", "cd", "gg", "gG", "gf", "gb", "bd", "bD", "uI"}
 for i = 1, #disable do
   keymap.set("n", "<leader>" .. disable[i], "")
 end
@@ -25,7 +24,7 @@ keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find fi
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Grep file" })
 keymap.set("n", "<leader>fh", "<cmd>Telescope resume<cr>", { desc = "Resume find/grep" })
 keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "Save file" })
-keymap.set("n", "<leader>fc", mini.delete, { desc = "Close file" })
+keymap.set("n", "<leader>fc", LazyVim.ui.bufremove, { desc = "Close file" })
 keymap.set("n", "<leader>fx", "<cmd>Neotree filesystem reveal left<cr>", { desc = "File explorer" })
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
 keymap.set("n", "<leader>fl", ReloadWithEncoding, { desc = "Reload with encoding" })
