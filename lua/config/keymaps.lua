@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
-local disable = {"ft", "fT", "wd", "w-", "w|", "ww", "-", "`", "|", "bb", "K", "L", "ur", "uf", "uF", "us", "uw", "ul", "uL", "ud", "uc", "uh", "uT", "ub", "ui", "xl", "xq", "l", "cd", "gg", "gG", "gf", "gb", "gl", "bd", "bD", "uI"}
+local disable = {"ft", "fT", "wd", "w-", "w|", "ww", "-", "`", "|", "bb", "K", "L", "ur", "uf", "uF", "us", "uw", "ul", "uL", "ud", "uc", "uh", "uT", "ub", "ui", "xl", "xq", "l", "cd", "gg", "gG", "gf", "gb", "gl", "bd", "bD", "uI", "m", "wm"}
 for i = 1, #disable do
   keymap.set("n", "<leader>" .. disable[i], "")
 end
