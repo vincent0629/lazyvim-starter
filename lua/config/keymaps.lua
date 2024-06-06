@@ -7,7 +7,7 @@ local disable = {"ft", "fT", "wd", "w-", "w|", "ww", "-", "`", "|", "bb", "K", "
 for i = 1, #disable do
   keymap.set("n", "<leader>" .. disable[i], "")
 end
-disable = {"l", "f", "<tab>", "]", "d", "["}
+disable = {"l", "f", "<tab>", "]", "d", "[", "o"}
 for i = 1, #disable do
   keymap.set("n", "<leader><tab>" .. disable[i], "")
 end
