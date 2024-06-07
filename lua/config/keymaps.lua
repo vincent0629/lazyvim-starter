@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
-local disable = {"ft", "fT", "wd", "w-", "w|", "ww", "-", "`", "|", "bb", "K", "L", "ur", "uf", "uF", "us", "uw", "ul", "uL", "ud", "uc", "uh", "uT", "ub", "ui", "xl", "xq", "l", "cd", "gg", "gG", "gf", "gb", "gl", "bd", "bD", "uI", "m", "wm", "gB", "gL"}
+local disable = {"ft", "fT", "wd", "ww", "-", "`", "|", "bb", "K", "L", "ur", "uf", "uF", "us", "uw", "ul", "uL", "ud", "uc", "uh", "uT", "ub", "ui", "xl", "xq", "l", "cd", "gg", "gG", "gf", "gb", "gl", "bd", "bD", "uI", "m", "wm", "gB", "gL"}
 for i = 1, #disable do
   keymap.set("n", "<leader>" .. disable[i], "")
 end
@@ -29,8 +29,6 @@ keymap.set("n", "<leader>fx", "<cmd>Neotree filesystem reveal left<cr>", { desc 
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
 keymap.set("n", "<leader>fl", ReloadWithEncoding, { desc = "Reload with encoding" })
 
-keymap.set("n", "<leader>wh", "<cmd>vsplit<cr>", { desc = "Split window right" })
-keymap.set("n", "<leader>wv", "<cmd>split<cr>", { desc = "Split window below" })
 keymap.set("n", "<leader>wc", "<cmd>close<cr>", { desc = "Close window" })
 
 keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
