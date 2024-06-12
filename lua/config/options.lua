@@ -3,7 +3,7 @@
 -- Add any additional options here
 local opt = vim.opt
 opt.mouse = ""
-opt.expandtab = false
+opt.expandtab = true
 opt.tabstop = 8
 opt.listchars = {
   trail = "-",
