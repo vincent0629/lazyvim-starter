@@ -1,20 +1,22 @@
 return {
   {
     "folke/which-key.nvim",
-    opts = function(_, opts)
-      opts.defaults = {
-        mode = { "n", "v" },
-        ["g"] = { name = "+goto" },
-        ["gs"] = { name = "+surround" },
-        ["z"] = { name = "+fold" },
-        ["]"] = { name = "+next" },
-        ["["] = { name = "+prev" },
-        ["<leader>c"] = { name = "+code" },
-        ["<leader>f"] = { name = "+file" },
-        ["<leader>g"] = { name = "+go to" },
-        ["<leader>q"] = { name = "+quit/session" },
-        ["<leader>w"] = { name = "+windows" },
+    opts = {
+      spec = {
+        {
+          mode = { "n", "v" },
+          { "g", group = "goto" },
+          { "gs", group = "surround" },
+          { "z", group = "fold" },
+          { "]", group = "next" },
+          { "[", group = "prev" },
+          { "<leader>c", group = "code" },
+          { "<leader>f", group = "file" },
+          { "<leader>g", group = "go to" },
+          { "<leader>q", group = "quit/session" },
+          { "<leader>w", group = "windows" },
+        }
       }
-    end,
+    }
   }
 }
