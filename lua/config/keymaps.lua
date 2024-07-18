@@ -3,13 +3,13 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
-local disable = {"ft", "fT", "wd", "ww", "-", "`", "|", "bb", "K", "L", "ur", "uf", "uF", "us", "uw", "ul", "uL", "ud", "uc", "uh", "uT", "ub", "ui", "xl", "xq", "l", "cd", "gg", "gG", "gf", "gb", "gl", "bd", "bD", "uI", "m", "wm", "gB", "gL"}
+local disable = {"K", "L", "-", "?", "`", "|", "bb", "bd", "bD", "cd", "ft", "fT", "gb", "gB", "gg", "gG", "gl", "gL", "xl", "xq"}
 for i = 1, #disable do
-  keymap.set("n", "<leader>" .. disable[i], "")
+  keymap.del("n", "<leader>" .. disable[i])
 end
-disable = {"l", "f", "<tab>", "]", "d", "[", "o"}
+disable = {"d", "f", "l", "o", "[", "]", "<tab>"}
 for i = 1, #disable do
-  keymap.set("n", "<leader><tab>" .. disable[i], "")
+  keymap.del("n", "<leader><tab>" .. disable[i])
 end
 
 local enc_index = 0
@@ -30,8 +30,8 @@ keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent fi
 keymap.set("n", "<leader>fl", ReloadWithEncoding, { desc = "Reload with encoding" })
 
 keymap.set("n", "<leader>wc", "<cmd>close<cr>", { desc = "Close window" })
-
-keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
+keymap.set("n", "<leader>w|", "<cmd>vsplit<cr>", { desc = "Split window right" })
+keymap.set("n", "<leader>w-", "<cmd>split<cr>", { desc = "Split window below" })
 
 keymap.set("n", "<leader>gx", "<cmd>call jobstart([\"open\", expand(\"<cfile>\")])<cr>", { desc = "Open URL" })
 keymap.set("n", "<leader>gf", "<cmd>e <cfile><cr>", { desc = "Open file under cursor" })
