@@ -15,7 +15,7 @@ end
 local enc_index = 0
 local ReloadWithEncoding = function()
   enc_index = 1 - enc_index
-  local encodings = {"utf-8", "gbk"}
+  local encodings = {"utf-8", "GB18030"}
   vim.cmd("e ++enc=" .. encodings[enc_index + 1])
 end
 
