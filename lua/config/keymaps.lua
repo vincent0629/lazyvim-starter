@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
-local disable = {"K", "L", "-", "?", "`", "|", "bb", "bd", "bD", "cd", "ft", "fT", "gb", "gB", "gg", "gG", "gl", "gL", "xl", "xq"}
+local disable = {"K", "L", "-", "?", "`", "|", "bb", "bd", "bD", "cd", "ft", "fT", "xl", "xq"}
 for i = 1, #disable do
   keymap.del("n", "<leader>" .. disable[i])
 end
@@ -19,12 +19,16 @@ local ReloadWithEncoding = function()
   vim.cmd("e ++enc=" .. encodings[enc_index + 1])
 end
 
+local CloseFile = function()
+  Snacks.bufdelete()
+end
+
 keymap.set("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New file" })
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find file" })
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Grep file" })
 keymap.set("n", "<leader>fh", "<cmd>Telescope resume<cr>", { desc = "Resume find/grep" })
 keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "Save file" })
-keymap.set("n", "<leader>fc", LazyVim.ui.bufremove, { desc = "Close file" })
+keymap.set("n", "<leader>fc", CloseFile, { desc = "Close file" })
 keymap.set("n", "<leader>fx", "<cmd>Neotree toggle<cr>", { desc = "Toggle file explorer" })
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
 keymap.set("n", "<leader>fl", ReloadWithEncoding, { desc = "Reload with encoding" })
