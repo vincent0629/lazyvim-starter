@@ -3,13 +3,9 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
-local disable = {"K", "L", "-", "?", "`", "|", "bb", "bd", "bD", "bo", "cd", "ft", "fT", "xl", "xq", "S", "."}
+local disable = {"K", "L", "-", "?", "`", "|", "cd", "ft", "fT", "S", "."}
 for i = 1, #disable do
   keymap.del("n", "<leader>" .. disable[i])
-end
-disable = {"d", "f", "l", "o", "[", "]", "<tab>"}
-for i = 1, #disable do
-  keymap.del("n", "<leader><tab>" .. disable[i])
 end
 
 local enc_index = 0

@@ -14,6 +14,9 @@ return {
         { "<leader>o", group = "open" },
         { "<leader>q", group = "quit/session" },
         { "<leader>w", group = "windows" },
+        { "<leader>b", hidden = true },
+        { "<leader>x", hidden = true },
+        { "<leader><tab>", hidden = true },
       }
     }
   }
