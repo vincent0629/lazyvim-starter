@@ -11,7 +11,7 @@ return {
         { "[", group = "prev" },
         { "<leader>c", group = "code" },
         { "<leader>f", group = "file" },
-        { "<leader>g", group = "go to" },
+        { "<leader>o", group = "open" },
         { "<leader>q", group = "quit/session" },
         { "<leader>w", group = "windows" },
       }

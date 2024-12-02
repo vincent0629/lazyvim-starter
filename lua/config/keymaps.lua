@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
-local disable = {"K", "L", "-", "?", "`", "|", "bb", "bd", "bD", "cd", "ft", "fT", "xl", "xq"}
+local disable = {"K", "L", "-", "?", "`", "|", "bb", "bd", "bD", "bo", "cd", "ft", "fT", "xl", "xq", "S", "."}
 for i = 1, #disable do
   keymap.del("n", "<leader>" .. disable[i])
 end
@@ -37,7 +37,7 @@ keymap.set("n", "<leader>wc", "<cmd>close<cr>", { desc = "Close window" })
 keymap.set("n", "<leader>w|", "<cmd>vsplit<cr>", { desc = "Split window right" })
 keymap.set("n", "<leader>w-", "<cmd>split<cr>", { desc = "Split window below" })
 
-keymap.set("n", "<leader>gx", "<cmd>call jobstart([\"open\", expand(\"<cfile>\")])<cr>", { desc = "Open URL" })
-keymap.set("n", "<leader>gf", "<cmd>e <cfile><cr>", { desc = "Open file under cursor" })
+keymap.set("n", "<leader>ox", "<cmd>call jobstart([\"open\", expand(\"<cfile>\")])<cr>", { desc = "Open URL" })
+keymap.set("n", "<leader>of", "<cmd>e <cfile><cr>", { desc = "Open file under cursor" })
 
 keymap.set("n", "<leader>cs", "<cmd>sort<cr>", { desc = "Sort lines" })
