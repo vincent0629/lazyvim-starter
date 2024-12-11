@@ -11,8 +11,4 @@ return {
     "echasnovski/mini.pairs",
     enabled = false,
   },
-  {
-    "nvim-pack/nvim-spectre",
-    enabled = false,
-  },
 }

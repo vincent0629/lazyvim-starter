@@ -1,48 +1,42 @@
 return {
   {
-    "telescope.nvim",
+    "nvim-telescope/telescope.nvim",
     keys = function()
       return {}
     end, 
   },
   {
-    "neo-tree.nvim",
+    "nvim-neo-tree/neo-tree.nvim",
     keys = function()
       return {}
     end, 
   },
   {
-    "bufferline.nvim",
+    "akinsho/bufferline.nvim",
     keys = function()
       return {}
     end,
   },
   {
-    "todo-comments.nvim",
+    "folke/todo-comments.nvim",
     keys = function()
       return {}
     end,
   },
   {
-    "noice.nvim",
+    "folke/noice.nvim",
     keys = function()
       return {}
     end,
   },
   {
-    "mini.pairs",
+    "folke/trouble.nvim",
     keys = function()
       return {}
     end,
   },
   {
-    "trouble.nvim",
-    keys = function()
-      return {}
-    end,
-  },
-  {
-    "conform.nvim",
+    "stevearc/conform.nvim",
     keys = function()
       return {}
     end,
