@@ -4,7 +4,7 @@ return {
     tag = "v0.9.3"
   },
   {
-    "conform.nvim",
+    "stevearc/conform.nvim",
     branch = "nvim-0.9"
   }
 }
