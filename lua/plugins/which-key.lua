@@ -16,7 +16,6 @@ return {
         { "<leader>w", group = "windows" },
         { "<leader>b", hidden = true },
         { "<leader>x", hidden = true },
-        { "<leader><tab>", hidden = true },
       }
     }
   }
