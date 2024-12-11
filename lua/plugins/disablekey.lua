@@ -36,12 +36,6 @@ return {
     end,
   },
   {
-    "nvim-notify",
-    keys = function()
-      return {}
-    end,
-  },
-  {
     "trouble.nvim",
     keys = function()
       return {}
