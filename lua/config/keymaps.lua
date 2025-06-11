@@ -20,13 +20,13 @@ local CloseFile = function()
 end
 
 keymap.set("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New file" })
-keymap.set("n", "<leader>ff", "<cmd>FzfLua files<cr>", { desc = "Find file" })
-keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>", { desc = "Grep file" })
+keymap.set("n", "<leader>ff", "<cmd>lua LazyVim.pick('files', {root=false})()<cr>", { desc = "Find file" })
+keymap.set("n", "<leader>fg", "<cmd>lua LazyVim.pick('live_grep', {root=false})()<cr>", { desc = "Grep file" })
 keymap.set("n", "<leader>fh", "<cmd>FzfLua resume<cr>", { desc = "Resume find/grep" })
 keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "Save file" })
 keymap.set("n", "<leader>fc", CloseFile, { desc = "Close file" })
 keymap.set("n", "<leader>fx", "<cmd>Neotree toggle<cr>", { desc = "Toggle file explorer" })
-keymap.set("n", "<leader>fr", "<cmd>FzfLua oldfiles<cr>", { desc = "Recent files" })
+keymap.set("n", "<leader>fr", "<cmd>lua LazyVim.pick('oldfiles', {cwd = vim.uv.cwd()})()<cr>", { desc = "Recent files" })
 keymap.set("n", "<leader>fl", ReloadWithEncoding, { desc = "Reload with encoding" })
 
 keymap.set("n", "<leader>wc", "<cmd>close<cr>", { desc = "Close window" })
