@@ -35,10 +35,4 @@ return {
       return {}
     end,
   },
-  {
-    "ibhagwan/fzf-lua",
-    keys = function()
-      return {}
-    end,
-  },
 }
