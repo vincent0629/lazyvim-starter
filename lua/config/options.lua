@@ -14,3 +14,4 @@ opt.listchars = {
 --opt.fixeol = false
 
 vim.g.autoformat = false
+vim.g.lazyvim_picker = "snacks"
