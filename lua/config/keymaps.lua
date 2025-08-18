@@ -42,7 +42,7 @@ keymap.set("n", "<leader>w|", "<cmd>vsplit<cr>", { desc = "Split window right" }
 keymap.set("n", "<leader>w-", "<cmd>split<cr>", { desc = "Split window below" })
 
 keymap.set("n", "<leader><tab>c", "<cmd>lua Snacks.bufdelete()<cr>", { desc = "Close tab" })
-keymap.set("n", "<leader><tab><tab>", "<cmd>tabnew<cr>", { desc = "New tab" })
+keymap.set("n", "<leader><tab><tab>", "<cmd>enew<cr>", { desc = "New tab" })
 
 keymap.set("n", "<s-h>", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
 keymap.set("n", "<s-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
