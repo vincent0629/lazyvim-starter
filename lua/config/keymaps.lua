@@ -20,12 +20,12 @@ keymap.set("n", "<leader>n", "<cmd>lua LazyVim.pick('notifications')()<cr>", { d
 keymap.set({"n", "v"}, "<leader>cf", "<cmd>lua LazyVim.format({force=true})<cr>", { desc = "Format" })
 keymap.set("n", "<leader>cs", "<cmd>sort<cr>", { desc = "Sort lines" })
 
-keymap.set("n", "<leader>ff", "<cmd>lua LazyVim.pick('files', {root=false})()<cr>", { desc = "Find file" })
-keymap.set("n", "<leader>fg", "<cmd>lua LazyVim.pick('live_grep', {root=false})()<cr>", { desc = "Grep file" })
-keymap.set("n", "<leader>fh", "<cmd>lua LazyVim.pick('resume')()<cr>", { desc = "Resume find/grep" })
+keymap.set("n", "<leader>ff", "<cmd>lua Snacks.picker.files()<cr>", { desc = "Find file" })
+keymap.set("n", "<leader>fg", "<cmd>lua Snacks.picker.grep()<cr>", { desc = "Grep file" })
+keymap.set("n", "<leader>fh", "<cmd>lua Snacks.picker.resume()<cr>", { desc = "Resume find/grep" })
 keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "Save file" })
-keymap.set("n", "<leader>fx", "<cmd>lua LazyVim.pick('explorer', {layout='sidebar'})()<cr>", { desc = "Toggle file explorer" })
-keymap.set("n", "<leader>fr", "<cmd>lua LazyVim.pick('oldfiles', {cwd = vim.uv.cwd()})()<cr>", { desc = "Recent files" })
+keymap.set("n", "<leader>fx", "<cmd>lua Snacks.explorer({layout='sidebar'})<cr>", { desc = "Toggle file explorer" })
+keymap.set("n", "<leader>fr", "<cmd>lua Snacks.picker.recent()<cr>", { desc = "Recent files" })
 keymap.set("n", "<leader>fl", ReloadWithEncoding, { desc = "Reload with encoding" })
 
 keymap.set("n", "<leader>gb", "<cmd>lua Snacks.picker.git_log_line()<cr>", { desc = "Git blame line" })
