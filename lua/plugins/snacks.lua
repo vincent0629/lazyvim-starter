@@ -1,7 +1,7 @@
 return {
   {
     "folke/snacks.nvim",
-    tag = "stable",
+    tag = "v2.27.0",
     opts = {
       indent = { enabled = false },
       scroll = { enabled = false },
