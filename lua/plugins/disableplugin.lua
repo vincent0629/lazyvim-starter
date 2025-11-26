@@ -28,10 +28,6 @@ return {
     enabled = false,
   },
   {
-    "nvim-lua/plenary.nvim",
-    enabled = false,
-  },
-  {
     "JoosepAlviste/nvim-ts-context-commentstring",
     enabled = false,
   },
