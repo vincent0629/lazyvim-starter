@@ -17,6 +17,7 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 keymap.set("n", "<leader>n", "<cmd>lua LazyVim.pick('notifications')()<cr>", { desc = "Notification history" })
 
+keymap.set("n", "<leader>cc", "<cmd>CopilotChatToggle<cr>", { desc = "Toggle CopilotChat" })
 keymap.set({"n", "v"}, "<leader>cf", "<cmd>lua LazyVim.format({force=true})<cr>", { desc = "Format" })
 keymap.set("n", "<leader>cs", "<cmd>sort<cr>", { desc = "Sort lines" })
 
