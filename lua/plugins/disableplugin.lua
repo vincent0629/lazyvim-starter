@@ -55,4 +55,8 @@ return {
     "echasnovski/mini.ai",
     enabled = false,
   },
+  {
+    "neovim/nvim-lspconfig",
+    enabled = false,
+  },
 }
