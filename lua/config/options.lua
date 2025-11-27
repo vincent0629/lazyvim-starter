@@ -15,3 +15,5 @@ opt.listchars = {
 
 vim.g.autoformat = false
 vim.g.lazyvim_picker = "snacks"
+vim.g.lazyvim_cmp = "blink.cmp"
+vim.g.lazyvim_explorer = "snacks"
