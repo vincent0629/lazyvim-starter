@@ -30,9 +30,17 @@ require("noice").setup({
   },
 })
 
+require("nvim-treesitter.configs").setup({
+  ensure_installed = {"bash", "c", "cmake", "cpp", "css", "gn", "html", "java", "javascript", "json", "make", "python", "xml", "yaml"},
+  sync_install = false,
+})
+
 require("persistence").load()
 
---require('nvim-ts-autotag').setup()
-
---require("treesitter-context").setup()
---require("treesitter-context").enable()
+require('nvim-ts-autotag').setup({
+  opts = {
+    enable_close = true,
+    enable_rename = true,
+    enable_close_on_slash = false,
+  }
+})
