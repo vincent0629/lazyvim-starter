@@ -11,4 +11,11 @@ require("nvim-treesitter.configs").setup({
   sync_install = false,
 })
 
+require("which-key").add({
+  {"<leader>c", group = "Code"},
+  {"<leader>f", group = "File"},
+  {"<leader>s", group = "Search"},
+  {"<leader>w", group = "Window"},
+})
+
 require("persistence").load()
