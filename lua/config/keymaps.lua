@@ -34,3 +34,6 @@ keymap("n", "<leader>wv", "<cmd>vsplit<cr>", { desc = "Split window vertically" 
 keymap("n", "<leader>wc", "<cmd>close<cr>", { desc = "Close window" })
 
 keymap("n", "<leader>cc", "<cmd>CopilotChatToggle<cr>", { desc = "Toggle CopilotChat" })
+
+keymap("n", "<leader>ul", "<cmd>set number! | set relativenumber!<cr>", { desc = "Toggle line number" })
+keymap("n", "<leader>ut", "<cmd>lua Snacks.terminal()<cr>", { desc = "Terminal" })

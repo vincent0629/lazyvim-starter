@@ -15,6 +15,7 @@ require("which-key").add({
   {"<leader>c", group = "Code"},
   {"<leader>f", group = "File"},
   {"<leader>s", group = "Search"},
+  {"<leader>u", group = "UI"},
   {"<leader>w", group = "Window"},
 })
 
