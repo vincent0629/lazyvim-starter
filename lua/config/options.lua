@@ -11,5 +11,7 @@ opt.listchars = {
   tab = "» ",
   eol = "↲",
 }
+opt.shiftwidth = 2
+opt.smartindent = true
 
 vim.g.autoformat = false
