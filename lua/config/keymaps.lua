@@ -29,8 +29,8 @@ keymap("n", "<leader>sf", "<cmd>lua Snacks.picker.files()<cr>", { desc = "Find f
 keymap("n", "<leader>sg", "<cmd>lua Snacks.picker.grep()<cr>", { desc = "Grep file" })
 keymap("n", "<leader>sr", "<cmd>lua Snacks.picker.resume()<cr>", { desc = "Resume search" })
 
-keymap("n", "<leader>wh", "<cmd>split<cr>", { desc = "Split window" })
-keymap("n", "<leader>wv", "<cmd>vsplit<cr>", { desc = "Split window vertically" })
+keymap("n", "<leader>wh", "<cmd>split<cr> | <C-w>j", { desc = "Split window" })
+keymap("n", "<leader>wv", "<cmd>vsplit<cr> | <C-w>l", { desc = "Split window vertically" })
 keymap("n", "<leader>wc", "<cmd>close<cr>", { desc = "Close window" })
 
 keymap("n", "<leader>cc", "<cmd>CopilotChatToggle<cr>", { desc = "Toggle CopilotChat" })
