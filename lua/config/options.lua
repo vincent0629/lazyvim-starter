@@ -1,5 +1,6 @@
 local opt = vim.opt
 
+opt.mouse = ""
 opt.number = true
 opt.relativenumber = true
 opt.wrap = false
