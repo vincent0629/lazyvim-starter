@@ -4,6 +4,23 @@ return {
     indent = { enabled = false },
     scroll = { enabled = false },
     picker = {
+      sources = {
+        files = {
+          hidden = true,
+        },
+        grep = {
+          hidden = true,
+        },
+        explorer = {
+          hidden = true,
+          layout = {
+            layout = {
+              position = "right",
+              width = 0.25,
+            },
+          }
+        }
+      },
       layout = {
         layout = {
           backdrop = false,
@@ -19,10 +36,6 @@ return {
           { win = "list", border = "none" },
           { win = "preview", title = "{preview}", height = 0.4, border = "top" },
         },
-      },
-    },
-    win = {
-      keys = {
       },
     },
   },
