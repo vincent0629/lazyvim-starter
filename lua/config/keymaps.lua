@@ -22,11 +22,11 @@ keymap("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase windo
 
 keymap("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New file" })
 keymap("n", "<leader>fc", "<cmd>bd<cr>", { desc = "Close file" })
-keymap("n", "<leader>fo", "<cmd>lua Snacks.explorer()<cr>", { desc = "Open file" })
+keymap("n", "<leader>fo", "<cmd>lua Snacks.explorer({hidden=true})<cr>", { desc = "Open file" })
 keymap("n", "<leader>fr", "<cmd>lua Snacks.picker.recent()<cr>", { desc = "Recent files" })
 
-keymap("n", "<leader>sf", "<cmd>lua Snacks.picker.files()<cr>", { desc = "Find file" })
-keymap("n", "<leader>sg", "<cmd>lua Snacks.picker.grep()<cr>", { desc = "Grep file" })
+keymap("n", "<leader>sf", "<cmd>lua Snacks.picker.files({hidden=true})<cr>", { desc = "Find file" })
+keymap("n", "<leader>sg", "<cmd>lua Snacks.picker.grep({hidden=true})<cr>", { desc = "Grep file" })
 keymap("n", "<leader>sr", "<cmd>lua Snacks.picker.resume()<cr>", { desc = "Resume search" })
 
 keymap("n", "<leader>wh", "<cmd>split<cr> | <C-w>j", { desc = "Split window" })
