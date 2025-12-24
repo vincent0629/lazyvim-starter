@@ -19,4 +19,7 @@ require("which-key").add({
   {"<leader>w", group = "Window"},
 })
 
-require("persistence").load()
+if #vim.fn.argv() == 0
+then
+  require("persistence").load()
+end
