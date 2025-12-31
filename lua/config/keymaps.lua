@@ -3,6 +3,7 @@ local keymap = vim.keymap.set
 vim.g.mapleader = " "
 
 keymap("n", " ", "<Nop>", { silent = true, remap = false })
+keymap("n", "<Esc>", "<cmd>nohlsearch<cr>")
 
 keymap("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 keymap("n", "<leader>n", "<cmd>Noice<cr>", { desc = "Notifications" })
