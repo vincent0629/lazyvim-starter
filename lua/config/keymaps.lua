@@ -23,6 +23,7 @@ keymap("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase windo
 
 keymap("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New file" })
 keymap("n", "<leader>fc", "<cmd>bd<cr>", { desc = "Close file" })
+keymap("n", "<leader>fC", "<cmd>bd!<cr>", { desc = "Close file (ignore change)" })
 keymap("n", "<leader>fo", "<cmd>lua Snacks.explorer()<cr>", { desc = "Open file" })
 keymap("n", "<leader>fr", "<cmd>lua Snacks.picker.recent()<cr>", { desc = "Recent files" })
 
