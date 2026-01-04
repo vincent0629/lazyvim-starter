@@ -15,5 +15,6 @@ opt.listchars = {
 opt.shiftwidth = 2
 opt.smartindent = true
 opt.ignorecase = true
+opt.clipboard = "unnamedplus"
 
 vim.g.autoformat = false
