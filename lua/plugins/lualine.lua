@@ -4,5 +4,20 @@ return {
     "nvim-tree/nvim-web-devicons"
   },
   opts = {
+    tabline = {
+      lualine_a = {
+        {
+          "buffers",
+        }
+      },
+    },
+    sections = {
+      lualine_c = {
+        {
+          "filename",
+          path = 1,
+        }
+      },
+    }
   }
 }
