@@ -19,8 +19,9 @@ require("which-key").add({
   {"<leader>w", group = "Window"},
 })
 
-if #vim.fn.argv() == 0
-then
+if vim.fn.argc() == 0 then
   require("persistence").load()
+  vim.cmd("%argdel")
+elseif not vim.wo.diff then
+  vim.cmd("%argdel")
 end
-vim.cmd("%argdel")
