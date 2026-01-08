@@ -22,6 +22,5 @@ require("which-key").add({
 if #vim.fn.argv() == 0
 then
   require("persistence").load()
-else
-  vim.cmd("argdel")
 end
+vim.cmd("%argdel")
