@@ -16,5 +16,7 @@ opt.shiftwidth = 2
 opt.smartindent = true
 opt.ignorecase = true
 opt.clipboard = "unnamedplus"
+opt.jumpoptions = "view"
+opt.scrolloff = 8
 
 vim.g.autoformat = false
