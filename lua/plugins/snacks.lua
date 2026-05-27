@@ -7,15 +7,15 @@ return {
       sources = {
         files = {
           hidden = true,
-          ignored = true,
+          ignored = false,
         },
         grep = {
           hidden = true,
-          ignored = true,
+          ignored = false,
         },
         explorer = {
           hidden = true,
-          ignored = true,
+          ignored = false,
           layout = {
             layout = {
               position = "right",
@@ -37,7 +37,7 @@ return {
           title_pos = "center",
           { win = "input", height = 1, border = "bottom" },
           { win = "list", border = "none" },
-          { win = "preview", title = "{preview}", height = 0.4, border = "top" },
+          { win = "preview", title = "{preview}", height = 0.6, border = "top" },
         },
       },
     },
